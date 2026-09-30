@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitcoin indicator charts</title>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #111;
+            color: #e8e8e8;
+            font-family: "IBM Plex Mono", Consolas, monospace;
+        }
+        main {
+            max-width: 44rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+        h1 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem;
+        }
+        p {
+            color: #b0b0b0;
+            line-height: 1.5;
+            margin: 0 0 1.75rem;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            border-top: 1px solid #2a2a2a;
+        }
+        li:last-child {
+            border-bottom: 1px solid #2a2a2a;
+        }
+        a {
+            color: #ededed;
+            text-decoration: none;
+            display: block;
+            padding: 0.9rem 0.15rem;
+        }
+        a:hover {
+            color: #fff;
+        }
+        .desc {
+            display: block;
+            color: #8a8a8a;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin-top: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bitcoin indicator charts</h1>
+        <p>
+            Self-contained Plotly pages. Each file is several megabytes;
+            the first load can take a while.
+        </p>
+        <ul>
+            <li>
+                <a href="momentum_cycle_chart.html">
+                    Ground Truth vs Model Prediction
+                    <span class="desc">Cycle phases from price extrema versus a model on on-chain momentum.</span>
+                </a>
+            </li>
+            <li>
+                <a href="momentum_123_chart.html">
+                    Ground Truth vs 1-2-3 + Tree Top + Post-Top Bear
+                    <span class="desc">Weekly 1-2-3 bull/bear spine with a Top overlay and post-Top Bear, against those same extrema phases.</span>
+                </a>
+            </li>
+            <li>
+                <a href="halving_cycles.html">
+                    Bitcoin Halving Cycles
+                    <span class="desc">Price multiples for epochs E2–E5, aligned on block height from each halving.</span>
+                </a>
+            </li>
+            <li>
+                <a href="sth_rp_deviation_chart.html">
+                    Deviation-Adjusted STH-RP
+                    <span class="desc">BTC versus short-term holder realized-price bands, with slope rays and stretch markers.</span>
+                </a>
+            </li>
+            <li>
+                <a href="volume_top_flags.html">
+                    Volume climax and fade tops
+                    <span class="desc">Higher-high climbs where volume climaxes or fades, confirmed by a 30% break.</span>
+                </a>
+            </li>
+            <li>
+                <a href="mstr_premium_history.html">
+                    MSTR Ex-Pref premium and true equity premium
+                    <span class="desc">Strategy market premium to Bitcoin NAV, with and without preferreds.</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
